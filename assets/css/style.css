@@ -1,3 +1,7 @@
-.submitBTN {
-    background-color: red;
+.jumbotron {
+    background-image: url("../images/trainBG.gif") 
+    /* fixed no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: 100%; */
 }

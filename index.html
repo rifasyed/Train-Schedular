@@ -11,35 +11,65 @@
 </head>
 <body>
     <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Train Schedular</h1>
+            <p class="lead">Stay updated on whenever your shit will arrive</p>
+        </div>
+
+        <table id="trainSchedule">
+            <thead>
+                <tr>
+                    <th data-field="train">Train Name</th>
+                    <th data-field="name">Destination</th>
+                    <th data-field="frequency">Frequency (mins)</th>
+                    <th data-field="arrival">Next Arrival</th>
+                    <th data-field="away">Minutes Away</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Amtrack</td>
+                    <td>Alaska</td>
+                    <td>30</td>
+                    <td>12:00</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+
         <form class="inputForm">
             <div class="row">
                 <label for="trainInput">Train Name</label>
                 <input id="trainNameInput" type="text" placeholder="train name" >
             </div>
+
             <div class="row">
                 <label for="destInput">Destination</label>
                 <input id="destinationInput" type="text" placeholder="destination">
             </div>
+
             <div class="row">
                 <label for="freqInput">Frequency (minutes)</label>
                 <input id="frequencyInput" type="text" placeholder="how often the train will arrive in minutes" >   
             </div>
+
             <div class="row">
                 <label for="arrivalInput">Arrival</label>
                 <input id="timeInput" type="text" placeholder="time of arrival" >
             </div>
+
             <div class="row">
                 <label for="awayInput">Minutes Away</label>
                 <input id="minutesInput" type="text" placeholder="minutes away" >
             </div>
+
         </form>
         <button class="submitBTN">Submit muthafuckkkaaa</button>
         <div id="addTrain"></div>
+
     </div>
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
