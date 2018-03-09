@@ -50,7 +50,7 @@ td {
     border: 1px solid clear;
 }
 
-#trainNameInput, #destinationInput, #frequencyInput, #timeInput, #minutesInput {
+#train-name, #train-dest, #train-frequency, #train-arrival {
     width: 800px;
     border:none;
     border-bottom:1px solid #884343;  
