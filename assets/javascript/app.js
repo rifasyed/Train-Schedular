@@ -58,11 +58,11 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 //   $("#trainSchedule").append("<tr><td>" + snap.val().name + "</td><td>" +
 //   snap.val().destination + "</td><td>" + snap.val().frequency +
 //   "</td><td>" + trainTime + "</td><td>" + tMinus + "</td></tr>")
-    $('#train').append("<p>"+newTrain+ "</p>")
-    $('#destination').append("<p>"+newDest+ "</p>")
-    $('#frequency').append("<p>"+newFreq+ "</p>")
-    $('#arrival').append("<p>"+getTrain+ "</p>")
-    $('#away').append("<p>"+tMinus+ "</p>")
+$('#train').append("<p>"+newTrain+ "</p>")
+$('#destination').append("<p>"+newDest+ "</p>")
+$('#frequency').append("<p>"+newFreq+ "</p>")
+$('#arrival').append("<p>"+getTrain+ "</p>")
+$('#away').append("<p>"+tMinus+ "</p>")
 })
 // })
     
